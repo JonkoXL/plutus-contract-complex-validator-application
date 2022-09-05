@@ -1,0 +1,4 @@
+cradle:
+  cabal:
+    - path: "./app/PlutusComplex.hs"
+      component: "exe:PlutusComplex"

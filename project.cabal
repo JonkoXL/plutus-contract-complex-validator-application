@@ -1,0 +1,57 @@
+Cabal-Version:      2.4
+Name:               plutus-contract-complex-validator-application
+Version:            0.1.0.0
+Author:             Dennis Joustra (JonkoXL)
+Maintainer:         djj1992@gmail.com
+Build-Type:          Simple
+Copyright:           © 2022 Dennis Joustra (JonkoXL)
+License:             Apache-2.0
+License-files:       LICENSE
+
+library
+  hs-source-dirs:      src
+  exposed-modules:    PlutusComplexValidator
+  
+  build-depends:     aeson
+                     , base ^>=4.14.1.0
+                     , bytestring
+                     , containers
+                     , cardano-api
+                     , cardano-crypto-class
+                     , cardano-ledger-core                     
+                     , data-default
+                     , freer-extras
+                     , playground-common
+                     , plutus-pab
+                     , plutus-contract
+                     , plutus-ledger
+                     , plutus-ledger-api
+                     , plutus-ledger-constraints
+                     , plutus-tx-plugin
+                     , plutus-tx
+                     , serialise
+                     , text
+  default-language:    Haskell2010
+  ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-strictness -fno-spec-constr -fno-specialise
+
+
+
+executable PlutusComplex
+  hs-source-dirs:       app
+  main-is:              PlutusComplex.hs
+  ghc-options:          -threaded -rtsopts "-with-rtsopts=-T"
+
+  build-depends:      base
+                      , cardano-api
+                      , plutus-contract-complex-validator-application
+                      , plutus-ledger-api
+                      , bytestring
+                      , aeson
+                      , base
+                      , cardano-api
+                      , cardano-ledger-alonzo
+                      , plutus-ledger
+                      , plutus-ledger-api
+                      , plutus-tx
+                      , bytestring
+                      , serialise
