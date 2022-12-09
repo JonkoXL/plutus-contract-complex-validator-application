@@ -1,10 +1,10 @@
 Cabal-Version:      2.4
 Name:               plutus-contract-complex-validator-application
 Version:            0.1.0.0
-Author:             Dennis Joustra (JonkoXL)
-Maintainer:         djj1992@gmail.com
+Author:             DJ (JonkoXL)
+Maintainer:         jonkoxl@gmail.com
 Build-Type:          Simple
-Copyright:           © 2022 Dennis Joustra (JonkoXL)
+Copyright:           © 2022 DJ (JonkoXL)
 License:             Apache-2.0
 License-files:       LICENSE
 
